@@ -7,28 +7,28 @@
 class Yamlet < Formula
   desc "Verify and author yamlet specs"
   homepage "https://github.com/RicardoMonteiroSimoes/Yamlet"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.0/yamlet-0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d20bc70ad674eadfcec980c289501bea489d18c56a5a8adb7d110a03f8ae161d"
+      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.1/yamlet-0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "abb282e32136afd6e634b89eb63e39c64a9ebab4bd8f13ba66f2971ddef50e48"
     end
     on_intel do
-      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.0/yamlet-0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "bd51adeef78ca00376327632a67c67e6ceeef023c7d4601937c0c9578c1bb717"
+      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.1/yamlet-0.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b654be847536a173df36b19b97b98ae6273c6ea78d4abedd5193afc3bf7bcf9f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.0/yamlet-0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5e375655c56023ada7e60ea26ccbec1332c507c54a46b359f8210204649c46a4"
+      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.1/yamlet-0.5.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "82a50c6acab7c952a490e727bf390d9ce8bce8f86a8ff11c9a6ff7b0a21ab5b8"
     end
     on_intel do
-      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.0/yamlet-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8864cb3a1fc8652a88c30d2f6032222216b7952119f0024501f66ee28d823982"
+      url "https://github.com/RicardoMonteiroSimoes/Yamlet/releases/download/v0.5.1/yamlet-0.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "400eabe45c16ee9a4b97e9db8d5141eab3c06f34e1ab070bbd193ed6c91ca16d"
     end
   end
 
@@ -37,6 +37,6 @@ class Yamlet < Formula
   end
 
   test do
-    assert_match "yamlet 0.5.0", shell_output("#{bin}/yamlet --version")
+    assert_match "yamlet 0.5.1", shell_output("#{bin}/yamlet --version")
   end
 end
